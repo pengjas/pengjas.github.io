@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, Times New Roman;
     background-color: #1e1e1e;
     color: #dcdcdc;
     margin: 0;
@@ -69,68 +69,3 @@ h3 {
     color: #dcdcdc;
     margin-top: 10px;
 }
-/* body {
-    font-family: Arial, sans-serif;
-    background-color: #1e1e1e;
-    color: #dcdcdc;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header {
-    text-align: center;
-    border-bottom: 2px solid #444;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-
-h1 {
-    color: #1e90ff;
-}
-
-.profile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.profile img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
-}
-
-.profile .details {
-    text-align: left;
-}
-
-a {
-    color: #1e90ff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-h2 {
-    color: #1e90ff;
-    border-bottom: 1px solid #444;
-    padding-bottom: 5px;
-}
-
-h3 {
-    color: #dcdcdc;
-    margin-top: 10px;
-} */
