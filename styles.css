@@ -1,7 +1,8 @@
 body {
     font-family: Georgia, Times New Roman;
     background-color: #ffffff ;
-    color: #dcdcdc;
+    color: #333;
+/*     color: #dcdcdc; */
     margin: 0;
     padding: 0;
 }
