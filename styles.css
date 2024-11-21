@@ -12,10 +12,7 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
-.rectangular {
-        width: 200px;  /* Set a more appropriate width */
-        height: auto;  /* Maintain aspect ratio */
-    }
+
 header {
     text-align: center;
     border-bottom: 2px solid #444;
