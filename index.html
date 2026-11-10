@@ -42,7 +42,15 @@
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/PengjuLiu.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/PengjuLiu.jpg" class="hoverZoomLink"></a>
+                <a id="profile-photo-link" href="images/PengjuLiu.jpg"><img id="profile-photo" style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/PengjuLiu.jpg" class="hoverZoomLink"></a>
+                <script>
+                  (function () {
+                    var photos = ["images/PengjuLiu.jpg", "images/PengjuLiu2.jpg"];
+                    var pick = photos[Math.floor(Math.random() * photos.length)];
+                    document.getElementById("profile-photo").src = pick;
+                    document.getElementById("profile-photo-link").href = pick;
+                  })();
+                </script>
               </td>
             </tr>
           </tbody></table>
