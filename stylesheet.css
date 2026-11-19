@@ -74,6 +74,44 @@ a:hover {
   text-decoration: none;
 }
 
+.copy-email {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #1772d0;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+.copy-email:focus,
+.copy-email:hover {
+  color: #f09228;
+}
+
+.copy-email .copy-tip {
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: #333;
+  color: #fff;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease-in-out;
+}
+
+.copy-email.copied .copy-tip {
+  opacity: 1;
+}
+
 body,
 td,
 th,

@@ -34,12 +34,46 @@
                   Before my Ph.D., I was a research assistant at <a href="https://en.sjtu.edu.cn/" target="_blank" rel="noopener">Shanghai Jiao Tong University</a> with <a href="https://elliothe.github.io/people/zhezhi-he" target="_blank" rel="noopener">Zhezhi He</a>, working on LLMs for Verilog code generation.
                 </p>
                 <p style="text-align:center">
-                  liu03486@umn.edu &nbsp;/&nbsp;
+                  <button type="button" id="copy-email" class="copy-email" title="Click to copy">liu03486@umn.edu<span class="copy-tip" aria-live="polite"></span></button> &nbsp;/&nbsp;
                   <a href="data/Pengju_CV.pdf" target="_blank" rel="noopener">CV</a> &nbsp;/&nbsp;
                   <a href="https://scholar.google.com/citations?user=eu9U-_oAAAAJ" target="_blank" rel="noopener">Scholar</a> &nbsp;/&nbsp;
                   <a href="https://www.linkedin.com/in/pengju-liu-aa2900290/" target="_blank" rel="noopener">LinkedIn</a> &nbsp;/&nbsp;
                   <a href="https://github.com/pengjas" target="_blank" rel="noopener">GitHub</a>
                 </p>
+                <script>
+                  (function () {
+                    var email = "liu03486@umn.edu";
+                    var button = document.getElementById("copy-email");
+                    var tip = button.querySelector(".copy-tip");
+                    var timer;
+                    function show(message) {
+                      tip.textContent = message;
+                      button.classList.add("copied");
+                      clearTimeout(timer);
+                      timer = setTimeout(function () { button.classList.remove("copied"); }, 1500);
+                    }
+                    function copyWithTextarea() {
+                      var area = document.createElement("textarea");
+                      area.value = email;
+                      area.setAttribute("readonly", "");
+                      area.style.position = "fixed";
+                      area.style.opacity = "0";
+                      document.body.appendChild(area);
+                      area.select();
+                      var ok = false;
+                      try { ok = document.execCommand("copy"); } catch (e) {}
+                      document.body.removeChild(area);
+                      show(ok ? "Copied!" : "Copy failed, please copy by hand");
+                    }
+                    button.addEventListener("click", function () {
+                      if (navigator.clipboard && window.isSecureContext) {
+                        navigator.clipboard.writeText(email).then(function () { show("Copied!"); }, copyWithTextarea);
+                      } else {
+                        copyWithTextarea();
+                      }
+                    });
+                  })();
+                </script>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
                 <a id="profile-photo-link" href="images/PengjuLiu.jpg" target="_blank" rel="noopener"><img id="profile-photo" style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/PengjuLiu.jpg" class="hoverZoomLink"></a>
